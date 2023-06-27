@@ -121,10 +121,10 @@ class _EditState extends State<Edit> {
                             child: Icon(Icons.cancel),
                             onPressed: () => Navigator.of(context).pop(),
                           ),
-                          ElevatedButton(
-                            child: Icon(Icons.check_circle),
-                            onPressed: () => _onDelete(context),
-                          ),
+                          // ElevatedButton(
+                          //   child: Icon(Icons.check_circle),
+                          //   onPressed: () => _onDelete(context),
+                          // ),
                         ],
                       );
                     },
