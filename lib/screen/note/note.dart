@@ -9,7 +9,7 @@ import 'dart:convert';
 import '../../services/base.dart';
 import '../../skelaton/noteSkelaton.dart';
 import 'add.dart';
-import 'edit.dart';
+// import 'edit.dart';
 import 'package:boilerplateflutter/model/note_model.dart';
 class NoteScreen extends StatefulWidget {
   const NoteScreen({super.key});
@@ -79,12 +79,12 @@ class _NoteScreenState extends State<NoteScreen> {
               Note note = mainC.listNotes[index];
               return GestureDetector(
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => Edit(id: note.noteId.toString()),
-                    ),
-                  );
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) => Edit(id: note.noteId.toString()),
+                  //   ),
+                  // );
                 },
                 child: 
                Card(
