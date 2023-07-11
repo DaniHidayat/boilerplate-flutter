@@ -24,7 +24,7 @@ class MainController extends GetxController {
       isLoading(true);
        update();
       final art = await mainservices.getNotes();
-      print('kucing, ${art}');
+     
       listNotes = art.data!;
       isLoading(false);
        update();

@@ -1,5 +1,5 @@
 class BaseUrl {
-  String ip = 'http://localhost:2000/api/v1';
+  String ip = 'http://103.210.54.196:2000/api/v1';
   getip() {
     return ip;
   }
