@@ -19,12 +19,13 @@ class MainController extends GetxController {
     update();
   }
     List<Note> listNotes = [];
-  getNotes() async {
+   Future<void>  getNotes() async {
     try {
       isLoading(true);
        update();
       final art = await mainservices.getNotes();
      
+        await Future.delayed(Duration(seconds: 1));
       listNotes = art.data!;
       isLoading(false);
        update();
